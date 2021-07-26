@@ -1,0 +1,134 @@
+:root{
+    --orange: #fbbe36;
+    --white: #fff;
+}
+
+.logo{
+    height: 60px;
+}
+.permanent-marker{
+    font-family: 'Permanent Marker', cursive;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+header{
+    min-height: 120vh;
+}
+section{
+    padding: 4rem 0;
+}
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+    padding: 0.7rem 1.5rem !important;
+}
+.nav-link:hover{
+    color: var(--orange) !important;
+}
+.active{
+    background-color: var(--white);
+    border-radius: 25px;
+}
+.barlow{
+    font-family: 'Barlow', sans-serif;
+}
+.header-para{
+    font-size: 1.1rem;
+}
+.btn-warning{
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+/* Live Demo Section */
+#live-demo h3{
+    font-family: 'Permanent Marker', cursive;
+}
+#live-demo h1{
+    font-size: 4.5rem;
+    font-family: 'Barlow', sans-serif;
+}
+.card-link{
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.card-link:hover{
+    color: #dc3545;
+}
+.card-link:hover .fa-arrow-right{
+    transition: all 0.5s ease;
+    transform: translateX(5px);
+}
+.card-image{
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px 2px #dedede;
+}
+.image:hover{
+    transform: translateY(-20px);
+}
+.card-image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(173, 173, 173);
+    z-index: 100;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.card-image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(173, 173, 173);
+    z-index: 100;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    opacity: 0;
+}
+.card-image:hover::after{
+    width: 0;
+    opacity: 0.4;
+}
+.card-image:hover::before{
+    height: 0;
+    opacity: 0.4;
+}
+
+/* Theme in Action */
+#theme-in-action{
+    background-image: linear-gradient(rgba(220, 53, 69, 0.7),rgba(220, 53, 69, 0.7)), url('../image/dinerm4-2870x1097.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#theme-in-action h1{
+    font-size: 4.5rem;
+}
+.play a{
+    background-color: #dc3545;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/* Live Demo Blocks */
+#live-demo-blocks h1{
+    font-size: 4.5rem;
+}
